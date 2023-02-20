@@ -1,0 +1,32 @@
+name: ${project.name}
+main: com.poixson.chunkperfect.ChunkPerfectPlugin
+version: ${project.version}
+api-version: ${spigot-short-version}
+depend: [ pxnCommonPluginMC ]
+authors: [ lorenzop ]
+website: ${project.url}
+description: ${project.description}
+commands:
+    chunk:
+        description: "Commands to generate or keep chunks loaded"
+        usage: "Usage: /chunk <cmd>"
+    chunks:
+        description: "Commands to generate or keep chunks loaded"
+        usage: "Usage: /chunks <cmd>"
+    chunkprotect:
+        description: "Commands to generate or keep chunks loaded"
+        usage: "Usage: /chunkprotect <cmd>"
+permission-message: "You don't have permission to use this command."
+permissions:
+    chunkperfect.*:
+        default: op
+        description: Gives access to all chunk perfect commands
+        children:
+            chunkperfect.fill: true
+            chunkperfect.load: true
+    chunkperfect.fill:
+        default: op
+        description: Generate chunks out to a distance
+    chunkperfect.load:
+        default: op
+        description: Keep selected chunks loaded
