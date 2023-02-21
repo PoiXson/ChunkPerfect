@@ -1,7 +1,6 @@
 package com.poixson.chunkperfect;
 
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.logging.Logger;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -9,7 +8,6 @@ import com.poixson.commonmc.tools.plugin.xJavaPlugin;
 
 
 public class ChunkPerfectPlugin extends xJavaPlugin {
-	public static final Logger log = Logger.getLogger("Minecraft");
 	public static final String LOG_PREFIX  = "[ChunkProtect] ";
 
 	protected static final AtomicReference<ChunkPerfectPlugin> instance = new AtomicReference<ChunkPerfectPlugin>(null);
