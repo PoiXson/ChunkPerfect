@@ -11,10 +11,11 @@ import com.poixson.commonmc.tools.plugin.xJavaPlugin;
 public class ChunkPerfectPlugin extends xJavaPlugin {
 	public static final Logger log = Logger.getLogger("Minecraft");
 	public static final String LOG_PREFIX  = "[ChunkProtect] ";
-	protected static final int SPIGOT_PLUGIN_ID = 0;
-	protected static final int BSTATS_PLUGIN_ID = 17775;
 
 	protected static final AtomicReference<ChunkPerfectPlugin> instance = new AtomicReference<ChunkPerfectPlugin>(null);
+
+	@Override public int getSpigotPluginID() { return 108147; }
+	@Override public int getBStatsID() {       return 17775;  }
 
 
 
@@ -62,21 +63,6 @@ public class ChunkPerfectPlugin extends xJavaPlugin {
 	protected void configDefaults(final FileConfiguration cfg) {
 		cfg.addDefault("Enable Chunk Loader",     Boolean.TRUE );
 		cfg.addDefault("Enable Generate Blocker", Boolean.FALSE);
-	}
-
-
-
-	// -------------------------------------------------------------------------------
-
-
-
-	@Override
-	protected int getSpigotPluginID() {
-		return SPIGOT_PLUGIN_ID;
-	}
-	@Override
-	protected int getBStatsID() {
-		return BSTATS_PLUGIN_ID;
 	}
 
 
