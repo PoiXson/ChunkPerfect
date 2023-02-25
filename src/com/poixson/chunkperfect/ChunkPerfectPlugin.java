@@ -1,7 +1,5 @@
 package com.poixson.chunkperfect;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 import org.bukkit.configuration.file.FileConfiguration;
 
 import com.poixson.commonmc.tools.plugin.xJavaPlugin;
@@ -9,8 +7,6 @@ import com.poixson.commonmc.tools.plugin.xJavaPlugin;
 
 public class ChunkPerfectPlugin extends xJavaPlugin {
 	public static final String LOG_PREFIX  = "[ChunkProtect] ";
-
-	protected static final AtomicReference<ChunkPerfectPlugin> instance = new AtomicReference<ChunkPerfectPlugin>(null);
 
 	@Override public int getSpigotPluginID() { return 108147; }
 	@Override public int getBStatsID() {       return 17775;  }
