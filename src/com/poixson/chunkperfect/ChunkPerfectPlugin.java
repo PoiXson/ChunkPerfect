@@ -6,10 +6,9 @@ import com.poixson.commonmc.tools.plugin.xJavaPlugin;
 
 
 public class ChunkPerfectPlugin extends xJavaPlugin {
-	public static final String LOG_PREFIX  = "[ChunkProtect] ";
-
 	@Override public int getSpigotPluginID() { return 108147; }
 	@Override public int getBStatsID() {       return 17775;  }
+	public static final String LOG_PREFIX  = "[ChunkProtect] ";
 
 
 
