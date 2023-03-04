@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated: Mon Feb 20 05:15:20 AM EST 2023 -->
+<!-- Generated: Sat Mar  4 03:31:50 PM EST 2023 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -10,7 +10,7 @@
 	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<url>https://poixson.com</url>
-	<description>Generate and keep chunks loaded</description>
+	<description>Generate chunks in a world and keep chunks loaded</description>
 	<organization>
 		<name>PoiXson</name>
 		<url>https://poixson.com</url>
